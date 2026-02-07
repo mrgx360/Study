@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Homepage</title>
+    <title>Professional Study Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        nav { background-color: #4CAF50; padding: 10px; color: white; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .hero { padding: 50px; text-align: center; background-color: #f4f4f4; }
+        .features { display: flex; justify-content: space-around; padding: 20px; }
+        .footer { text-align: center; padding: 20px; background-color: #222; color: white; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Study Homepage</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About the Study</h2>
-            <p>This is a brief description of the study and its objectives.</p>
-        </section>
-        <section>
-            <h2>Resources</h2>
-            <ul>
-                <li><a href="#">Resource 1</a></li>
-                <li><a href="#">Resource 2</a></li>
-                <li><a href="#">Resource 3</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 mrgx360. All rights reserved.</p>
-    </footer>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to Our Study Platform</h1>
+        <p>Your journey to achieving excellence starts here!</p>
+    </div>
+    <div class="features" id="features">
+        <div><h2>Feature 1</h2><p>Description of feature 1.</p></div>
+        <div><h2>Feature 2</h2><p>Description of feature 2.</p></div>
+        <div><h2>Feature 3</h2><p>Description of feature 3.</p></div>
+    </div>
+    <div class="footer">
+        <p>Contact us at info@studyplatform.com</p>
+    </div>
 </body>
 </html>
