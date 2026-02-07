@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Analytics</title>
+    <script>
+        // Placeholder for visitor data
+        let visitorData = {
+            count: 0,
+            countries: []
+        };
+
+        // Function to simulate visitor count and countries
+        function simulateVisitorData() {
+            // Simulate visitor count
+            visitorData.count = Math.floor(Math.random() * 1000);
+            // Simulate visitor countries
+            visitorData.countries = ["USA", "Canada", "UK", "Germany", "France"].sort(() => Math.random() - 0.5).slice(0, 3);
+        }
+
+        function displayVisitorData() {
+            document.getElementById('visitorCount').innerText = 'Visitor Count: ' + visitorData.count;
+            document.getElementById('visitorCountries').innerText = 'Countries: ' + visitorData.countries.join(', ');
+        }
+
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            const secretKey = 'your_secret_key'; // Change this to your actual secret key
+            if (password === secretKey) {
+                simulateVisitorData();
+                displayVisitorData();
+                document.getElementById('analytics').style.display = 'block';
+                document.getElementById('passwordForm').style.display = 'none';
+            } else {
+                alert('Incorrect password!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Visitor Analytics</h1>
+    <div id="passwordForm">
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" />
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    <div id="analytics" style="display:none;">
+        <h2>Visitor Data</h2>
+        <p id="visitorCount"></p>
+        <p id="visitorCountries"></p>
+    </div>
+</body>
+</html>
