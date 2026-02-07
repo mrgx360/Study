@@ -3,34 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Study Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Study Platform</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        nav { background-color: #4CAF50; padding: 10px; color: white; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        .hero { padding: 50px; text-align: center; background-color: #f4f4f4; }
-        .features { display: flex; justify-content: space-around; padding: 20px; }
-        .footer { text-align: center; padding: 20px; background-color: #222; color: white; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #f3f4f6, #e4e7eb);
+            color: #333;
+        }
+        header {
+            background: #4A90E2;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/random/1600x900');
+            background-size: cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 50px 20px;
+        }
+        .feature {
+            background: white;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            flex: 1 1 300px;
+            transition: transform 0.2s;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="hero">
-        <h1>Welcome to Our Study Platform</h1>
-        <p>Your journey to achieving excellence starts here!</p>
-    </div>
-    <div class="features" id="features">
-        <div><h2>Feature 1</h2><p>Description of feature 1.</p></div>
-        <div><h2>Feature 2</h2><p>Description of feature 2.</p></div>
-        <div><h2>Feature 3</h2><p>Description of feature 3.</p></div>
-    </div>
-    <div class="footer">
-        <p>Contact us at info@studyplatform.com</p>
-    </div>
+    <header>
+        <h1>Study Platform</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Welcome to Our Study Platform</h2>
+        <p>Your journey to learning starts here!</p>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Feature One</h3>
+            <p>Engaging lessons tailored to your needs.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature Two</h3>
+            <p>Interactive quizzes to test your knowledge.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature Three</h3>
+            <p>Track your learning progress easily.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Study Platform</p>
+    </footer>
 </body>
 </html>
